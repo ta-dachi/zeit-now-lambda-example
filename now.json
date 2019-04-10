@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "znle",
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@now/static"
+    },
+    { "src": "*.js", "use": "@now/node" }
+  ]
+}
