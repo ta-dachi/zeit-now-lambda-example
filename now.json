@@ -3,7 +3,7 @@
   "name": "znle",
   "builds": [
     {
-      "src": "*.html",
+      "src": "*/**.ejs",
       "use": "@now/static"
     },
     { "src": "*.js", "use": "@now/node" }
