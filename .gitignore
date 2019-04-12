@@ -11,6 +11,11 @@ dist/
 
 # Environment file
 .env
+.env.dev
+.env.prod
+
+# Files
+files/
 
 scratchpad.js
 TODO.md

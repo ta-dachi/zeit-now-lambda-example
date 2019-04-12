@@ -7,9 +7,18 @@
       method="post"
       encType="multipart/form-data"
     >
-      <input type="file" name="sampleFile" />
+      <input type="file" name="fileToUpload" id="file" />
       <input type="submit" value="Upload!" />
+      <label for="file"><%= maxSize %> KB Limit</label>
     </form>
-    <%= URL %>
   </body>
+  <script>
+  var uploadField = document.getElementById("file");
+  uploadField.onchange = function() {
+    if(this.files[0].size > max) { //maxSize is from node express
+      alert("File is too big!");
+      this.value = "";
+    };
+  };
+  </script>
 </html>

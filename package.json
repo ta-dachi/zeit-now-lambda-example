@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "dev": "cross-env ENVIRONMENT=dev node index.js",
+    "start:dev": "cross-env ENVIRONMENT=dev node index.js",
+    "start:prod": "cross-env ENVIRONMENT=dev node index.js"
   },
   "author": "Takumi Adachi",
   "license": "ISC",
@@ -14,5 +16,8 @@
     "express": "^4.16.4",
     "express-fileupload": "^1.1.4",
     "helmet": "^3.16.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
